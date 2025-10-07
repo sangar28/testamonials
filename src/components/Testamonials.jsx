@@ -14,7 +14,6 @@ const Testamonials = () => {
     //     : currentIndex
     // );
     setCurrentIndex(currentIndex > 0 ? currentIndex - 1 : currentIndex);
-    console.log(currentIndex);
   };
   const handleClickNext = () => {
     // setCurrentIndex(
@@ -39,7 +38,7 @@ const Testamonials = () => {
             <FaChevronLeft /> Prev
           </button>
         ) : (
-          <button onClick={handleClickPrev} className="btn btn-not-allowed">
+          <button className="btn btn-not-allowed">
             <FaChevronLeft /> Prev
           </button>
         )}
@@ -48,10 +47,7 @@ const Testamonials = () => {
             Next <FaChevronRight />
           </button>
         ) : (
-          <button
-            onClick={(e) => handleClickNext(e)}
-            className="btn btn-not-allowed"
-          >
+          <button className="btn btn-not-allowed">
             Next <FaChevronRight />
           </button>
         )}
